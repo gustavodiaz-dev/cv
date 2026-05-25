@@ -32,3 +32,4 @@ Este repositorio aloja la versión interactiva y optimizada para impresión de m
 * `index.html`: Estructura del currículum y metadatos (SEO/OG/JSON-LD).
 * `style.css`: Estilos visuales del sitio y media query de impresión.
 * `script.js`: Lógica interactiva en JavaScript.
+* `CV_Gustavo_Diaz.pdf`: Archivo del currículum en PDF listo para descargar.
