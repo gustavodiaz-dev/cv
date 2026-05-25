@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavo David Diaz Maldonado - Administrador de Sistemas TI | Cloud, DevOps & SRE</title>
     <meta name="description" content="CV profesional de Gustavo David Diaz Maldonado, Administrador de Sistemas TI certificado en ITIL v4 y especializándose en Cloud, DevOps y SRE.">
+    
+    <!-- Open Graph / LinkedIn Metadata -->
+    <meta property="og:title" content="Gustavo David Diaz Maldonado - CV Profesional">
+    <meta property="og:description" content="Administrador de Sistemas TI en transición activa hacia Cloud / DevOps / SRE. Certificado en ITIL v4. Santo Domingo, RD.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gustavodiaz-gif.github.io/CV/">
+    
+    <!-- Inline SVG Favicon (Cloud & Code) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233b82f6'><path d='M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z'/></svg>">
+
     <!-- Google Fonts: Outfit for headings, Inter for body text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +48,7 @@
                 <rect x="6" y="14" width="12" height="8"></rect>
             </svg>
             <span>PDF / Imprimir</span>
+            <span class="btn-tooltip">Destino: 'Guardar como PDF'</span>
         </button>
     </div>
 
@@ -59,32 +70,60 @@
                             </svg>
                             <span>Santo Domingo, RD</span>
                         </li>
-                        <li>
+                        <li class="contact-item">
                             <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                             </svg>
                             <a href="tel:+18495953395">(849) 595-3395</a>
+                            <button class="copy-btn" data-copy="(849) 595-3395" title="Copiar Teléfono" aria-label="Copiar Teléfono">
+                                <svg class="copy-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                <span class="copy-tooltip">Copiar</span>
+                            </button>
                         </li>
-                        <li>
+                        <li class="contact-item">
                             <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
                             <a href="mailto:gustavodaviddiaz@icloud.com">gustavodaviddiaz@icloud.com</a>
+                            <button class="copy-btn" data-copy="gustavodaviddiaz@icloud.com" title="Copiar Correo" aria-label="Copiar Correo">
+                                <svg class="copy-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                <span class="copy-tooltip">Copiar</span>
+                            </button>
                         </li>
-                        <li>
+                        <li class="contact-item">
                             <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                                 <rect x="2" y="9" width="4" height="12"></rect>
                                 <circle cx="4" cy="4" r="2"></circle>
                             </svg>
                             <a href="https://linkedin.com/in/gustavodiaz00" target="_blank" rel="noopener noreferrer">linkedin.com/in/gustavodiaz00</a>
+                            <button class="copy-btn" data-copy="https://linkedin.com/in/gustavodiaz00" title="Copiar LinkedIn" aria-label="Copiar LinkedIn">
+                                <svg class="copy-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                <span class="copy-tooltip">Copiar</span>
+                            </button>
                         </li>
-                        <li>
+                        <li class="contact-item">
                             <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                             </svg>
                             <a href="https://github.com/gustavodiaz-gif" target="_blank" rel="noopener noreferrer">github.com/gustavodiaz-gif</a>
+                            <button class="copy-btn" data-copy="https://github.com/gustavodiaz-gif" title="Copiar GitHub" aria-label="Copiar GitHub">
+                                <svg class="copy-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                <span class="copy-tooltip">Copiar</span>
+                            </button>
                         </li>
                     </ul>
                 </section>

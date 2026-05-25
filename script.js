@@ -27,6 +27,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Copy to clipboard functionality
+    const copyBtns = document.querySelectorAll('.copy-btn');
+    copyBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation(); // Prevent triggering parent anchor click
+            
+            const textToCopy = btn.getAttribute('data-copy');
+            if (!textToCopy) return;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const tooltip = btn.querySelector('.copy-tooltip');
+                if (tooltip) {
+                    const originalText = tooltip.innerText;
+                    tooltip.innerText = '¡Copiado!';
+                    tooltip.classList.add('copied-status');
+                    
+                    // Reset after 2 seconds
+                    setTimeout(() => {
+                        tooltip.innerText = originalText;
+                        tooltip.classList.remove('copied-status');
+                    }, 2000);
+                }
+            }).catch(err => {
+                console.error('Error al copiar: ', err);
+            });
+        });
+    });
+
     // Add entry animation trigger if needed, or logs for verification
     console.log("CV interactivo de Gustavo David Diaz Maldonado cargado con éxito.");
 });
