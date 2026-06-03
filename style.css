@@ -286,7 +286,8 @@ ul {
 }
 
 .contact-list a {
-    word-break: break-all;
+    overflow-wrap: break-word;
+    word-break: break-word;
     font-weight: 500;
 }
 
@@ -408,6 +409,28 @@ ul {
     color: var(--text-secondary);
 }
 
+.lang-dots {
+    display: flex;
+    gap: 4px;
+    margin: 3px 0 1px;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.dot.filled {
+    background-color: var(--accent-primary);
+}
+
+.dot.empty {
+    background-color: transparent;
+    border: 1.5px solid var(--text-muted);
+}
+
 /* Education */
 .education-item {
     display: flex;
@@ -451,6 +474,11 @@ ul {
     gap: 14px;
 }
 
+.main-section + .main-section {
+    border-top: 1px solid var(--border-color);
+    padding-top: 4px;
+}
+
 .section-title {
     font-family: var(--font-heading);
     font-size: 18px;
@@ -469,11 +497,40 @@ ul {
 
 /* Header */
 .cv-header {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 24px;
+}
+
+.cv-header-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cv-header-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cv-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-primary) 0%, #8b5cf6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
+    flex-shrink: 0;
+    letter-spacing: -0.5px;
+    box-shadow: 0 0 0 2px var(--accent-primary), 0 0 20px var(--accent-glow);
 }
 
 .cv-name {
@@ -483,6 +540,10 @@ ul {
     line-height: 1.1;
     letter-spacing: -0.5px;
     color: var(--text-primary);
+    background: linear-gradient(135deg, var(--accent-primary) 0%, #8b5cf6 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .cv-titles {
@@ -515,12 +576,18 @@ ul {
     color: var(--text-primary);
 }
 
+.title-badge.ai-accent {
+    background-color: rgba(139, 92, 246, 0.15);
+    color: #8b5cf6;
+    border: 1px solid #8b5cf6;
+}
+
 /* Profile Section */
 .profile-text {
     font-size: 13.5px;
     line-height: 1.6;
     color: var(--text-secondary);
-    text-align: justify;
+    text-align: left;
 }
 
 /* Experience / Timeline Section */
@@ -648,6 +715,7 @@ ul {
 .project-card {
     background-color: var(--bg-sidebar);
     border: 1px solid var(--border-color);
+    border-left: 3px solid var(--accent-primary);
     border-radius: var(--border-radius-md);
     padding: 16px 20px;
     display: flex;
@@ -892,6 +960,12 @@ ul {
     .cv-name {
         font-size: 26px;
     }
+
+    .cv-avatar {
+        width: 52px;
+        height: 52px;
+        font-size: 17px;
+    }
     
     .job-header {
         flex-direction: column;
@@ -960,12 +1034,62 @@ button:focus-visible,
     }
 
     /* Hide Web Controls & Copy Tools */
-    .web-controls, 
+    .web-controls,
     #webControls,
     .copy-btn,
     .copy-tooltip,
     .btn-tooltip {
         display: none !important;
+    }
+
+    /* Remove gradient from name — flat color for PDF */
+    .cv-name {
+        background: none !important;
+        -webkit-background-clip: unset !important;
+        background-clip: unset !important;
+        -webkit-text-fill-color: #0f172a !important;
+        color: #0f172a !important;
+    }
+
+    /* Avatar in print */
+    .cv-header-row {
+        gap: 12px !important;
+    }
+
+    .cv-avatar {
+        width: 44px !important;
+        height: 44px !important;
+        font-size: 14px !important;
+        box-shadow: none !important;
+        -webkit-text-fill-color: #ffffff !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* Section dividers */
+    .main-section + .main-section {
+        border-top-color: #e2e8f0 !important;
+        padding-top: 4px !important;
+    }
+
+    /* Language dots */
+    .dot.filled {
+        background-color: #1d4ed8 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .dot.empty {
+        border-color: #94a3b8 !important;
+    }
+
+    /* AI accent badge */
+    .title-badge.ai-accent {
+        background-color: #f5f3ff !important;
+        color: #6d28d9 !important;
+        border-color: #6d28d9 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
 
     /* Reset skill group hover padding for print */
