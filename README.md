@@ -2,7 +2,7 @@
 
 Este repositorio aloja la versión interactiva y optimizada para impresión de mi currículum profesional, desarrollado con las mejores prácticas web y enfocado en mi perfil de **Administrador de Sistemas TI** en transición activa hacia roles de **Cloud / DevOps / SRE**.
 
-🔗 **Versión en Vivo:** [[gustavodiaz-gif.github.io/cv](https://gustavodiaz-dev.github.io/cv/)]
+🔗 **Versión en Vivo:** [Gustavo Diaz(https://gustavodiaz-dev.github.io/cv/)]
 
 ---
 
