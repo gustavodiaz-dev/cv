@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavo David Diaz Maldonado - Administrador de Sistemas TI | Cloud, DevOps & SRE</title>
-    <meta name="description" content="CV profesional de Gustavo David Diaz Maldonado, Administrador de Sistemas TI certificado en ITIL v4 y especializándose en Cloud, DevOps y SRE.">
-    
+    <title>Gustavo David Diaz Maldonado - Administrador de Sistemas TI | Cloud, DevOps & AI Automation</title>
+    <meta name="description" content="CV profesional de Gustavo David Diaz Maldonado, Administrador de Sistemas TI certificado en ITIL v4, en transición hacia Cloud/DevOps/SRE y constructor de agentes de IA con n8n y Claude.">
+
     <!-- Open Graph / LinkedIn Metadata -->
     <meta property="og:title" content="Gustavo David Diaz Maldonado - CV Profesional">
-    <meta property="og:description" content="Administrador de Sistemas TI en transición activa hacia Cloud / DevOps / SRE. Certificado en ITIL v4. Santo Domingo, RD.">
+    <meta property="og:description" content="Administrador de Sistemas TI en transición activa hacia Cloud / DevOps / SRE. Constructor de agentes de IA con n8n y Claude. Certificado en ITIL v4. Santo Domingo, RD.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gustavodiaz-gif.github.io/cv/">
     
@@ -194,9 +194,24 @@
                     </div>
 
                     <div class="skill-group">
-                        <h3>Contenedores</h3>
+                        <h3>Contenedores / Virtualización</h3>
                         <div class="skill-badges">
                             <span class="skill-badge">Docker</span>
+                            <span class="skill-badge">Proxmox VE</span>
+                            <span class="skill-badge">LXC</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Automatización & IA</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">n8n <small>(self-hosted)</small></span>
+                            <span class="skill-badge">Claude API <small>(Anthropic)</small></span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">Bash / Fish</span>
+                            <span class="skill-badge">Notion API</span>
+                            <span class="skill-badge">Telegram Bot API</span>
                         </div>
                     </div>
 
@@ -286,7 +301,7 @@
                         Perfil Profesional
                     </h2>
                     <p class="profile-text">
-                        Profesional de TI con más de 14 años de experiencia operando sistemas críticos en entornos hospitalarios y de manufactura. Hoy gestiono y administro parte de los sistemas de un centro médico hospitalario con más de 400 usuarios y plataformas core (RIS/PACS, MedicalCore — ERP médico, SAP Business One), con foco en gestión de incidentes, planes de contingencia y mejora continua. ITIL 4 Foundation y Specialist certificado; en transición activa hacia roles de Cloud / DevOps / SRE con AWS Solutions Architect Associate en estudio y homelab personal sobre Docker, Linux y redes.
+                        Profesional de TI con más de 14 años de experiencia operando sistemas críticos en entornos hospitalarios y de manufactura. Hoy gestiono y administro parte de los sistemas de un centro médico hospitalario con más de 400 usuarios y plataformas core (RIS/PACS, MedicalCore — ERP médico, SAP Business One), con foco en gestión de incidentes, planes de contingencia y mejora continua. ITIL 4 Foundation y Specialist certificado; en transición activa hacia roles de Cloud / DevOps / SRE con AWS Solutions Architect Associate en estudio y homelab propio sobre Proxmox, LXC y redes. Paralelamente, construyo agentes de IA y sistemas de automatización con n8n, Python y Claude (Anthropic), conectando Notion, Telegram y APIs externas para resolver problemas reales de forma autónoma.
                     </p>
                 </section>
 
@@ -360,18 +375,35 @@
                     
                     <div class="project-card">
                         <div class="project-header">
-                            <h3 class="project-name">Homelab — Laboratorio Cloud/DevOps</h3>
+                            <h3 class="project-name">Homelab — Infraestructura Self-Hosted</h3>
                         </div>
                         <p class="project-description">
-                            Laboratorio sobre macOS orientado a Platform Engineering: contenedores, redes privadas, observabilidad y automatización.
+                            Homelab propio sobre Proxmox VE con contenedores LXC, orientado a Platform Engineering y automatización de operaciones.
                         </p>
                         <ul class="project-bullet-points">
-                            <li><strong>Stack base:</strong> Docker (multi-contenedor), Tailscale (mesh VPN para acceso remoto seguro) y AdGuard (DNS interno con filtrado).</li>
-                            <li><strong>Infraestructura como código:</strong> scripts de despliegue versionados en GitHub; primeros módulos de Terraform y playbooks de Ansible en práctica.</li>
-                            <li><strong>Próximos pasos:</strong> Kubernetes (k3s), Prometheus + Grafana para observabilidad, y CI/CD con GitHub Actions.</li>
+                            <li><strong>Stack base:</strong> Proxmox VE + LXC (AdGuard DNS, Tailscale, n8n), acceso remoto seguro vía mesh VPN.</li>
+                            <li><strong>Monitoreo autónomo:</strong> workflows en n8n que consultan la API de Proxmox diariamente, detectan contenedores caídos o backups fallidos y alertan por Telegram. Silencio = todo OK.</li>
+                            <li><strong>Mantenimiento automatizado:</strong> systemd timers en CachyOS Linux que actualizan el sistema, herramientas y plugins cada domingo a las 3am, registrando el resultado en Notion vía webhook.</li>
                         </ul>
                         <div class="project-repo">
                             <strong>Repo:</strong> <a href="https://github.com/gustavodiaz-gif/homelab" target="_blank" rel="noopener noreferrer">github.com/gustavodiaz-gif/homelab</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-name">Agente Financiero Personal — IA en Telegram</h3>
+                        </div>
+                        <p class="project-description">
+                            Agente conversacional en Telegram que registra gastos, hace seguimiento vs presupuesto y da coaching financiero en tiempo real.
+                        </p>
+                        <ul class="project-bullet-points">
+                            <li><strong>Stack:</strong> n8n (orquestación) + Claude Sonnet (Anthropic) como LLM + Notion como base de datos + Telegram como interfaz.</li>
+                            <li><strong>Arquitectura:</strong> agente principal con 4 sub-workflows como herramientas (registrar gasto, consultar gastos del mes, consultar deudas, actualizar saldo).</li>
+                            <li><strong>Automatización bancaria:</strong> workflows que parsean notificaciones de consumo TC del banco desde Outlook y registran gastos en Notion automáticamente, sin intervención manual.</li>
+                        </ul>
+                        <div class="project-repo">
+                            <strong>Repo:</strong> <a href="https://github.com/gustavodiaz-gif/n8n-workflows" target="_blank" rel="noopener noreferrer">github.com/gustavodiaz-gif/n8n-workflows</a>
                         </div>
                     </div>
                 </section>
