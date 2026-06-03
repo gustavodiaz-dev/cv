@@ -18,37 +18,37 @@
     --container-width: 1000px;
 }
 
-/* Dark Theme Variables */
+/* Dark Theme Variables — Tokyo Night */
 .dark-theme {
-    --bg-page: #09090b;
-    --bg-page-gradient: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #09090b 70%);
-    --bg-container: rgba(24, 24, 27, 0.85);
-    --bg-sidebar: rgba(18, 18, 20, 0.95);
-    --border-color: rgba(255, 255, 255, 0.08);
-    --border-hover: rgba(255, 255, 255, 0.15);
-    
-    --text-primary: #f4f4f5;
-    --text-secondary: #a1a1aa;
-    --text-muted: #71717a;
-    
-    --accent-primary: #3b82f6;
-    --accent-hover: #60a5fa;
-    --accent-light: rgba(59, 130, 246, 0.15);
-    --accent-glow: rgba(59, 130, 246, 0.3);
-    
-    --badge-bg: #27272a;
-    --badge-text: #e4e4e7;
-    --badge-border: rgba(255, 255, 255, 0.05);
-    
-    --timeline-dot-border: #3b82f6;
-    --timeline-line: rgba(255, 255, 255, 0.08);
-    
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
-    --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.4);
-    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
-    
+    --bg-page: #0d1117;
+    --bg-page-gradient: radial-gradient(circle at 50% 0%, #1a1b2e 0%, #0d1117 70%);
+    --bg-container: rgba(26, 27, 46, 0.85);
+    --bg-sidebar: rgba(22, 22, 30, 0.97);
+    --border-color: rgba(122, 162, 247, 0.1);
+    --border-hover: rgba(122, 162, 247, 0.22);
+
+    --text-primary: #c0caf5;
+    --text-secondary: #a9b1d6;
+    --text-muted: #565f89;
+
+    --accent-primary: #7aa2f7;
+    --accent-hover: #a9c1fa;
+    --accent-light: rgba(122, 162, 247, 0.14);
+    --accent-glow: rgba(122, 162, 247, 0.28);
+
+    --badge-bg: #1f2335;
+    --badge-text: #c0caf5;
+    --badge-border: rgba(122, 162, 247, 0.1);
+
+    --timeline-dot-border: #7aa2f7;
+    --timeline-line: rgba(122, 162, 247, 0.14);
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.6);
+    --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+
     --backdrop-blur: 20px;
-    --glass-shimmer: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%);
+    --glass-shimmer: linear-gradient(135deg, rgba(122,162,247,0.04) 0%, rgba(122,162,247,0) 100%);
 }
 
 /* Light Theme Variables */
@@ -64,16 +64,16 @@
     --text-secondary: #475569;
     --text-muted: #64748b;
     
-    --accent-primary: #2563eb;
-    --accent-hover: #1d4ed8;
-    --accent-light: rgba(37, 99, 216, 0.08);
-    --accent-glow: rgba(37, 99, 216, 0.2);
-    
-    --badge-bg: #e2e8f0;
-    --badge-text: #1e293b;
-    --badge-border: rgba(0, 0, 0, 0.03);
-    
-    --timeline-dot-border: #2563eb;
+    --accent-primary: #3d6ec5;
+    --accent-hover: #2e5fb3;
+    --accent-light: rgba(122, 162, 247, 0.1);
+    --accent-glow: rgba(122, 162, 247, 0.2);
+
+    --badge-bg: #e8ecf4;
+    --badge-text: #1e2030;
+    --badge-border: rgba(61, 110, 197, 0.08);
+
+    --timeline-dot-border: #3d6ec5;
     --timeline-line: rgba(0, 0, 0, 0.08);
     
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -519,7 +519,7 @@ ul {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent-primary) 0%, #8b5cf6 100%);
+    background: linear-gradient(135deg, var(--accent-primary) 0%, #bb9af7 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -540,7 +540,7 @@ ul {
     line-height: 1.1;
     letter-spacing: -0.5px;
     color: var(--text-primary);
-    background: linear-gradient(135deg, var(--accent-primary) 0%, #8b5cf6 60%);
+    background: linear-gradient(135deg, var(--accent-primary) 0%, #bb9af7 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -577,9 +577,9 @@ ul {
 }
 
 .title-badge.ai-accent {
-    background-color: rgba(139, 92, 246, 0.15);
-    color: #8b5cf6;
-    border: 1px solid #8b5cf6;
+    background-color: rgba(187, 154, 247, 0.15);
+    color: #bb9af7;
+    border: 1px solid #bb9af7;
 }
 
 /* Profile Section */
@@ -1021,13 +1021,13 @@ button:focus-visible,
         --bg-container: #ffffff !important;
         --bg-sidebar: #f8fafc !important;
         --border-color: #e2e8f0 !important;
-        --accent-primary: #1d4ed8 !important; /* Rich Dark Blue */
-        --accent-hover: #1e40af !important;
-        --accent-light: #eff6ff !important;
+        --accent-primary: #2e5fb3 !important; /* Tokyo Night blue, darkened for print */
+        --accent-hover: #2454a4 !important;
+        --accent-light: #eef2ff !important;
         --badge-bg: #f1f5f9 !important;
         --badge-text: #0f172a !important;
         --timeline-line: #cbd5e1 !important;
-        --timeline-dot-border: #1d4ed8 !important;
+        --timeline-dot-border: #2e5fb3 !important;
         --shadow-sm: none !important;
         --shadow-md: none !important;
         --shadow-lg: none !important;
@@ -1074,7 +1074,7 @@ button:focus-visible,
 
     /* Language dots */
     .dot.filled {
-        background-color: #1d4ed8 !important;
+        background-color: #2e5fb3 !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
     }
@@ -1085,9 +1085,9 @@ button:focus-visible,
 
     /* AI accent badge */
     .title-badge.ai-accent {
-        background-color: #f5f3ff !important;
-        color: #6d28d9 !important;
-        border-color: #6d28d9 !important;
+        background-color: #f0ecff !important;
+        color: #6e3fbb !important;
+        border-color: #6e3fbb !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
     }
@@ -1254,12 +1254,12 @@ button:focus-visible,
 
     .title-badge.active-accent {
         background-color: #eff6ff !important;
-        color: #1d4ed8 !important;
-        border-color: #1d4ed8 !important;
+        color: #2e5fb3 !important;
+        border-color: #2e5fb3 !important;
     }
 
     .title-badge.outline {
-        border: 1px dashed #1d4ed8 !important;
+        border: 1px dashed #2e5fb3 !important;
         color: #0f172a !important;
     }
 
