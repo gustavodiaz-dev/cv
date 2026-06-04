@@ -2,8 +2,8 @@
 
 Este repositorio aloja la versión interactiva y optimizada para impresión de mi currículum profesional, desarrollado con las mejores prácticas web y enfocado en mi perfil de **AI Automation Builder | Administrador de Sistemas TI | Cloud / DevOps**.
 
-🔗 **Versión en Vivo (ES):** [gustavodiaz-dev.github.io/cv/](https://gustavodiaz-dev.github.io/cv/)
-🔗 **Live Version (EN):** [gustavodiaz-dev.github.io/cv/en.html](https://gustavodiaz-dev.github.io/cv/en.html)
+**Versión en Vivo (ES):** [gustavodiaz-dev.github.io/cv/](https://gustavodiaz-dev.github.io/cv/)
+**Live Version (EN):** [gustavodiaz-dev.github.io/cv/en.html](https://gustavodiaz-dev.github.io/cv/en.html)
 
 ---
 
